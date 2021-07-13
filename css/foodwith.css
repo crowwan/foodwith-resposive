@@ -1,0 +1,182 @@
+/* RESET */
+body{
+  font-family: '나눔고딕','NanumGothic','돋움','Dotum',sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+img{
+  vertical-align: top;
+}
+/* BLIND */
+.blind{
+  display: block;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0,0,0,0);
+  margin: -1px;
+}
+/* COMMON */
+button{
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  padding: 0;
+}
+.inner{
+  position: relative;
+  box-sizing: border-box;
+}
+/* HEADER */
+header .inner{
+  height: 50px;
+}
+header .logo{
+  display: inline-block;
+  position: absolute;
+  background: url(/image/logo_pc.png) no-repeat center;
+  width: 107px;
+  height: 22px;
+  margin: 14px 0 0 10px;
+}
+header .gnb_menu{
+  right: 0;
+  position: absolute;
+  width: 46px;
+  height: 50px;
+  margin-right: 4px;
+  background: url(/image/icon_menu.png) no-repeat center;
+}
+header .menu{
+  display: none;
+  position: absolute;
+  margin-top: 50px;
+  height: 128px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+header .menu a{
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  color: #333;
+}
+header .menu a:hover,
+header .menu a:focus
+{
+  font-weight: bold;
+}
+header .gnb_menu:focus +.menu{
+  display: block;
+}
+/* BANNER */
+.banner{
+  display: block;;
+  background-color: #ffee02;
+  height: 330px;
+  padding: 20px 35px 0;
+}
+.banner .inner{
+  width: 250px;
+  height: 100%;
+  margin: auto;
+}
+.banner .content .banner_img{
+  width: 100%;
+}
+.banner .content .description{
+  display: -webkit-box;
+  font-size: 22px;
+  color: #333;
+  line-height: 28px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 5px;
+}
+.banner .content .profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 40px;
+}
+.banner .content .profile_img{
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.banner .content .profile::before{
+  display: block;
+  content: '';
+  border-top: 1.5px solid #333;
+  width: 40px;
+  position: absolute;
+  margin-top: -60px;
+}
+.banner .content .profile_img img{
+  width: 30px;
+  height: 30px;
+}
+.banner .content .profile_name{
+  font-size: 16px;
+  color: #333;
+}
+/* MAIN CONTENT */
+.main{
+  background-color: #f0f0f0;
+  padding:0 15px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.main .inner{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .content{
+  margin: 15px 0;
+  min-width: 0;
+}
+.main .content .link{
+  display: block;
+}
+.main .content .link img{
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+.main .content .link .description{
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  padding: 0 5px;
+  text-align: center;
+}
+.main .more{
+  position: relative;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+  padding: none;
+  height: 60px;
+  background-color: transparent;
+}
+.main .more::before{
+  display: inline-block;
+  content: '';
+  background: url(/image/icon_arrow_more.png) no-repeat center;
+  width: 16px;
+  height: 16px;
+  margin-top: -1px;
+  margin-right: 10px;
+}
