@@ -7,6 +7,7 @@ a{
   color: #000;
 }
 img{
+  box-sizing: border-box;
   vertical-align: top;
 }
 legend{
@@ -65,6 +66,8 @@ header .menu{
   text-align: center;
   box-sizing: border-box;
   padding: 10px 0;
+  z-index: 1;
+  background-color: #fff;
 }
 header .menu a{
   display: block;
@@ -78,7 +81,7 @@ header .menu a:focus
 {
   font-weight: bold;
 }
-header .gnb_menu:focus +.menu{
+header .gnb_menu:focus + .menu{
   display: block;
 }
 /* BANNER */
@@ -89,7 +92,6 @@ header .gnb_menu:focus +.menu{
   padding: 20px 35px 0;
 }
 .banner .inner{
-  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -149,6 +151,7 @@ header .gnb_menu:focus +.menu{
   flex-wrap: wrap;
 }
 .main .content{
+  position: relative;
   margin: 15px auto;
   min-width: 0;
 }
@@ -248,6 +251,7 @@ header .gnb_menu:focus +.menu{
   box-sizing: border-box;
   padding: 10px;
   width: 100%;
+  height: 150px;
 }
 .message-content .submit-btn{
   position: absolute;
@@ -312,7 +316,7 @@ section.links{
 /* FOOTER */
 footer{
   background-color: #fff;
-  padding:15px;
+  padding:30px;
 }
 footer .links{
   font-size: 14px;
@@ -342,6 +346,7 @@ footer .links li{
     width: 250px;
     margin-top: 0;
     right: 0;
+    text-align: right;
   }
   header .menu li{
     display: inline-block;
@@ -406,6 +411,9 @@ footer .links li{
   .main .content:nth-child(2n-1){
     margin-right: 20px;
   }
+  .main .content .link .description{
+    font-size: 18px;
+  }
   /* MESSAGE */
   .message{
     padding: 30px 34px;
@@ -424,5 +432,112 @@ footer .links li{
   .links .creator .title{
     display: inline-block;
     margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .inner{
+    width: 988px;
+  }
+  header .inner{
+    height: 70px;
+  }
+  header .logo{
+    background: url(/image/logo_m.png) no-repeat;
+    width: 168px;
+    height: 36px;
+    margin-left: 0;
+  }
+  header .menu{
+    width: 300px;
+  }
+  header .menu li{
+    display: inline-block;
+    margin: 0 10px;
+  }
+  header .menu li:last-child{
+    margin-right: 0;
+  }
+  header .menu li a{
+    line-height: 50px;
+    font-size: 22px
+  }
+  /* BANNER */
+  .banner{
+    padding: 0 0;
+    height: 420px;
+  }
+  .banner .content .description{
+    font-size: 40px;
+    line-height: 52px;
+    -webkit-line-clamp: 3;
+    text-align: left;
+    width: 460px;
+    height: 156px;
+  }
+  .banner .content .banner_img{
+    width: 500px;
+    height: 360px;
+  }
+  /* MAIN CONTENT */
+  .main{
+    padding: 0;
+  }
+  .main .content{
+    width: 316px;
+    height: 316px;
+  }
+  .main .content:nth-child(2n){
+    margin-right: 20px;
+  }
+  .main .content:nth-child(3n){
+    margin-right: 0;
+  }
+  .main .content .description{
+    display: none;
+  }
+  .main .content:hover .link .description{
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    width: 316px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    background-color: #fff;
+    bottom: 0;
+  }
+  .main .content:hover img{
+    opacity: .3;
+  }
+  /* MESSAGE */
+  .message{
+    position: relative;
+    padding: 50px 0;
+    background: url(/image/bg_pencil.png) no-repeat center;
+  }
+  .message .inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  .message .leave_box{
+    text-align: left;
+    width: 300px;
+  }
+  .message .leave_box .leave_message{
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .message .leave_box .leave_email{
+    font-size: 18px;
+  }
+  .message .message-content{
+    width: 590px;
+    padding: 40px 50px;
+    position: relative;
+  }
+  /* LINKS */
+  section.links{
+    padding: 30px 0;
   }
 }
