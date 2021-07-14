@@ -316,7 +316,7 @@ section.links{
 /* FOOTER */
 footer{
   background-color: #fff;
-  padding:30px;
+  padding:20px;
 }
 footer .links{
   font-size: 14px;
@@ -434,6 +434,77 @@ footer .links li{
     margin-right: 20px;
   }
 }
+
+/* VIEW */
+.base-font{
+  font-size: 14px;
+  color: #666;
+}
+.inner.view{
+  padding: 0 15px;
+  background-color: #f0f0f0;
+}
+.view-content .title{
+  color: #333;
+  font-weight: bold;
+}
+.content_info .inner.view{
+  padding: 40px 15px 25px;
+  border-bottom: 1px solid #c1c1c1;
+}
+.content_info .title.l{
+  font-size: 28px;
+  padding-bottom: 30px;
+}
+.content_info .main_info{
+  display: flex;
+  flex-wrap: wrap;
+}
+.content_info .main_info li{
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  color: #767676;
+  margin-bottom: 15px;
+}
+.content_info .main_info li .left{
+  width: 100px;
+  font-weight: bold;
+}
+.content_info .main_info li .num{
+  font-family: 'tahoma';
+}
+/* RECIPE */
+.recipe .inner{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.recipe .inner .base-font{
+  margin-top: 15px;
+  line-height: 25px;
+}
+.food_make .base-font{
+  list-style: decimal;
+  padding-left: 15px;
+}
+/* TABLE */
+.make_table.inner{
+  padding-top: 30px;
+}
+.make_table table{
+  table-layout: fixed;
+  width: 100%;
+}
+.make_table table,
+.make_table table th,
+.make_table table td{
+  border: 1px solid #c1c1c1;
+  vertical-align: middle;
+  line-height: 25px;
+  text-align: left;
+  padding: 5px;
+}
+
 
 @media screen and (min-width: 1024px) {
   .inner{
