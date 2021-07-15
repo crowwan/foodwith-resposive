@@ -492,7 +492,7 @@ footer .links li{
   padding-top: 30px;
 }
 .make_table table{
-  table-layout: fixed;
+  table-layout:fixed;
   width: 100%;
 }
 .make_table table,
@@ -504,7 +504,22 @@ footer .links li{
   text-align: left;
   padding: 5px;
 }
-
+/* IMAGE */
+.images.inner{
+  padding: 30px 15px;
+}
+.images.inner .image{
+  text-align: center;
+}
+.images.inner .image figcaption{
+  font-size: 14px;
+  color: #666;
+  padding: 10px 0 30px;
+}
+.images.inner img{
+  width: 100%;
+  max-width: 600px;
+}
 
 @media screen and (min-width: 1024px) {
   .inner{
